@@ -77,10 +77,10 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      # - name: deploy to tencent
-      #   uses: appleboy/ssh-action@master
-      #   with:
-      #     host: ${{ secrets.TENCENT_CLOUD_IP }} #云服务器的ip
-      #     username: ${{ secrets.TENCENT_CLOUD_NAME }} #云服务器的用户名
-      #     password: ${{ secrets.TENCENT_CLOUD_PASSWORD }} #云服务器的密码
-      #     script: cd ~ && cd ./shell && sh deploy-blog.sh
+      - name: deploy to tencent
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.TENCENT_CLOUD_IP }} #云服务器的ip
+          username: ${{ secrets.TENCENT_CLOUD_NAME }} #云服务器的用户名
+          password: ${{ secrets.TENCENT_CLOUD_PASSWORD }} #云服务器的密码
+          script: cd ~ && cd ./shell && sh deploy-dev.sh
