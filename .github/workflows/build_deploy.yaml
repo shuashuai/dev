@@ -24,7 +24,10 @@ jobs:
         id: pnpm-install
         with:
           version: 7
-          run_install: false    
+          run_install: false 
+
+      - name: install packages
+        run: pnpm install
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -40,7 +43,9 @@ jobs:
             ${{ runner.os }}-pnpm-store-
     
       - name: build-static
-        run: pnpm build
+        run: |
+        pnpm 
+        pnpm build
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
