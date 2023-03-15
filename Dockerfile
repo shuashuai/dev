@@ -5,7 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /usr/share/nginx/html
 
-COPY public /usr/share/nginx/html
+COPY .next /usr/share/nginx/html
 
 EXPOSE 80
 
