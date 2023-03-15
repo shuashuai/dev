@@ -14,9 +14,9 @@ COPY --chown=nextjs:nodejs .next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 8000
+EXPOSE 4000
 
-ENV PORT 8000
+ENV PORT 4000
 
 
 CMD ["node", "server.js"]
