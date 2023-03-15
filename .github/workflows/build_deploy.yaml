@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
     
       - name: build-static
-        run: pnpm build
+        run: pnpm build && pnpm install --production --ignore-scripts --prefer-offline
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
