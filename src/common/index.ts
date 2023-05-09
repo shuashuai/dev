@@ -1,0 +1,51 @@
+export const AI_CHAT_LIST = [
+  {
+    id: 1,
+    name: 'Poe',
+    url: 'https://www.poe.com/',
+    thumb: require('@/assets/poe.webp'),
+    description: 'Fast, helpful AI chat, 可作为 ChatGPT 的代替，只需要邮箱或手机登录即可使用，集成了 ChatGPT、GPT-4、Sage、Claude、NeevaAI、Dragonfly。',
+  },
+  {
+    id: 2,
+    name: 'Rix',
+    url: 'https://hashnode.com/rix/general',
+    thumb: require('@/assets/rix.webp'),
+    description: '面向开发人员的人工智能聊天机器人, 获取有关开源项目的即时、经过验证的最新信息，可以当做开发的学习或最佳实践的示例工具，具体功能请自己体验',
+  },
+  {
+    id: 3,
+    name: 'Midjourney',
+    url: 'https://docs.midjourney.com/docs/quick-start',
+    thumb: require('@/assets/midjourney.webp'),
+    description: 'AI 绘图工具，链接指向的是官方使用文档，如果想直接体验绘图功能，可以注册 Discord 账号，然后加入 Midjourney 官方群组，或者自建频道，去体验即可。',
+  },
+  {
+    id: 4,
+    name: 'Notion AI',
+    url: 'https://www.notion.so/product/ai',
+    thumb: require('@/assets/notion.webp'),
+    description: '生产力工具的集大成者，Notion以其强大的功能解决了个人事务安排、知识笔记管理、组织项目协作等一系列难题。对于写作帮助提升巨大，免费版本有写作限制，可以自行体验。',
+  },
+  {
+    id: 5,
+    name: 'Phind',
+    url: 'https://www.phind.com/',
+    thumb: require('@/assets/phind.webp'),
+    description: 'The AI search engine for developers. 有点类似于 bing 搜索，支持三种搜索模式： 1.Use Best Model。 2.Short Answer。 3.Ignore Web Results。',
+  },
+  {
+    id: 6,
+    name: 'Chat with any PDF',
+    url: 'https://www.chatpdf.com',
+    thumb: require('@/assets/chatpdf.webp'),
+    description: '上传 PDF, 然后就可以和 PDF 进行聊天，可以当做 PDF 的阅读工具，也可以当做 PDF 的笔记工具，可以当做 PDF 的搜索工具... 可以帮助你快速总结 PDF 的内容。',
+  },
+  {
+    id: 7,
+    name: 'Chat with documents',
+    url: 'https://chatdoc.com/',
+    thumb: require('@/assets/chatdoc.webp'),
+    description: '与文档聊天。 通过引用的来源获得即时答案。ChatDOC 是一个基于 ChatGPT 的文件阅读助手，可以从文档中快速提取、定位和汇总信息。',
+  },
+]
